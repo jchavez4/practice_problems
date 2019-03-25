@@ -19,3 +19,19 @@ def merge_ranges(meetings):
     
 
     return merged
+
+def reverse(list_of_chars):
+
+    # Reverse the input list of chars in place
+    i = 0
+    j = len(list_of_chars) - 1
+    print(i)
+    print(j)
+    
+    while i < len(list_of_chars)/2 and j > 0:
+        tmp = list_of_chars[i]
+        list_of_chars[i] = list_of_chars[j]
+        list_of_chars[j] = tmp
+        
+        i+=1
+        j-=1
